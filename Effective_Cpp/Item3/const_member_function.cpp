@@ -6,7 +6,9 @@ public:
     A(std::string str): m_str{ str } {};
 
     // const specify which member function can be called on a const object
+    // static mmeber can be modified in const member function
     const char& operator[](size_t pos) const {
+        num++;
         return m_str[pos];
     }
 
@@ -15,7 +17,11 @@ public:
     }
 private:
     std::string m_str;
+
+    static int num;
 };
+
+int A::num = 5;
 
 int main() {
     const A obj{"hello world"};
