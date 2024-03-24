@@ -2,6 +2,9 @@
 #include <vector>
 
 template <typename T> class TClass {
+    // use using/typedef to simplify the name of member from class T !!!
+    using iterator = typename T::const_iterator;
+
     // There is no difference between using class and typename to specify parameter
     public:
     TClass (const T& obj) {
