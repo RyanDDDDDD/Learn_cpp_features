@@ -50,4 +50,6 @@ CMakeLists.txt.user*
 # QtCreator 4.8< compilation database
 compile_commands.json
 
-*/.qtc_clangd/*
+QT_Learning/*/.qtc_clangd/*
+QT_Learning/*/debug/*
+QT_Learning/*/release/*
